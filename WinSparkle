@@ -1,0 +1,6 @@
+#include <winsparkle.h>
+
+void InitUpdater() {
+    win_sparkle_set_appcast_url("https://your-site.com/updates/appcast.xml"); // XML points to latest installer
+    win_sparkle_init();
+}
