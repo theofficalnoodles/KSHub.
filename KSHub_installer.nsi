@@ -1,13 +1,11 @@
-; NSIS script for Chromium fork installer
 Name "KSHub"
-OutFile "KSHub.exe"
-InstallDir "$PROGRAMFILES\MyFastChromium"
+OutFile "KSHubSetup.exe"
+InstallDir "$PROGRAMFILES\KSHub"
 RequestExecutionLevel admin
 
 Section "Install"
     SetOutPath "$INSTDIR"
     File "chromium\src\out\Light\chrome.exe"
-    ; Add files/folders as needed
 SectionEnd
 
 Section "Uninstall"
