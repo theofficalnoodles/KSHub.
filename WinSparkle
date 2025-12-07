@@ -4,3 +4,8 @@ void InitUpdater() {
     win_sparkle_set_appcast_url("https://github.com/theofficalnoodles/KSHub./tree/main"); // XML points to latest installer
     win_sparkle_init();
 }
+
+$ git clone https://github.com/vslavik/winsparkle.git
+$ cd winsparkle
+$ git submodule init
+$ git submodule update
