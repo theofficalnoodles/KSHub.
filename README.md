@@ -62,4 +62,5 @@ Follow these steps to download, build, and install it on Windows.
    This step can take several hours.
    ```sh
    autoninja -C out\Light chrome
+   > **Auto-Update:** KSHub will automatically check for updates and prompt you when a new version is available, so you always stay secure and up to date.
 
