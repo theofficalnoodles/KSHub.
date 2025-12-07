@@ -1,0 +1,30 @@
+name: Build KSHub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore KSHub.sln
+
+      - name: Build Solution
+        run: dotnet build KSHub.sln -c Release
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: KSHub-Release
+          path: '**/bin/Release/net6.0-windows/*'
