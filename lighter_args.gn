@@ -1,0 +1,8 @@
+is_debug = false
+symbol_level = 0
+enable_nacl = false
+enable_print_preview = false
+enable_widevine = false
+is_component_build = false
+blink_enable_spellcheck = false
+enable_pdf = false
