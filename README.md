@@ -20,6 +20,7 @@ Follow these steps to download, build, and install it on Windows.
 - [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/vs/community/)  
   > **Must install “Desktop development with C++” workload**
 - [NSIS](https://nsis.sourceforge.io/) (for installer creation)
+- [.NET 6.0 SDK] (https://builds.dotnet.microsoft.com/dotnet/Sdk/6.0.428/dotnet-sdk-6.0.428-win-x64.exe)
 
 ---
 
